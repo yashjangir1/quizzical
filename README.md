@@ -3,6 +3,8 @@
 This is a Quiz Web App created using [Open trivia database API](https://opentdb.com). It shows the scores and correct answers for questions on clicking check button.
 This is a final solo project of [Bob Zirrol's React Course on Scrimba](https://scrimba.com/learn/learnreact).
 
+Link to the WebSite : https://ephemeral-mermaid-0ca1d1.netlify.app/
+
 ScreenShots:
 <img width="956" alt="quizzical1" src="https://user-images.githubusercontent.com/102591054/177474261-59cf4294-1380-45e0-8770-4fe6718136c9.png">
 
