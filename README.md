@@ -1,4 +1,3 @@
-# quizzical
 # Quizzical App from Scrimba
 
 This is a Quiz Web App created using [Open trivia database API](https://opentdb.com). It shows the scores and correct answers for questions on clicking check button.
