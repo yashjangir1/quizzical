@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;800&family=Inter:wght@100;300;400;600;700;800&family=Karla:wght@200;300;400;500;600;800&display=swap');
+
+
+.question-container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 0.794239px solid #DBDEF0;
+    padding: 15px;
+}
+
+.question{
+    font-family: Inter;
+    font-size: 18px;
+    color: #293264;
+    font-weight: 600;
+}
+
+.option{
+    font-family: Inter;
+    font-size: 16px;
+    border: 1px solid #293264;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #293264;
+    font-weight: 600;
+    background-color: #F5F7FB;
+}

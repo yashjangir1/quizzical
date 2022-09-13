@@ -1,4 +1,5 @@
 import React from "react";
+import Question from "../Question";
 import './index.css'
 
 const QuizQuestions = () => {
@@ -11,7 +12,16 @@ const QuizQuestions = () => {
     ]
 
     return (
-        <div className="quiz-questions-container"></div>
+        <div className="quiz-questions-container">
+            <div className="questions-container">
+                <Question/>
+                <Question/>
+                <Question/>
+                <Question/>
+                <Question/>
+            </div>
+            <button className="check-answer-button">Check answers</button>
+        </div>
     )
 }
 
