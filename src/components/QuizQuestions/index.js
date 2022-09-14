@@ -14,11 +14,7 @@ const QuizQuestions = () => {
     return (
         <div className="quiz-questions-container">
             <div className="questions-container">
-                <Question/>
-                <Question/>
-                <Question/>
-                <Question/>
-                <Question/>
+                {quizArr.map((item) => <Question question = {item.question} options = {[...item.incorrect_answers, item.correct_answer]} />)}
             </div>
             <button className="check-answer-button">Check answers</button>
         </div>
