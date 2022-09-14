@@ -1,17 +1,20 @@
 import React from "react";
 import './index.css'
+import { v4 as uuid } from "uuid";
 
 const Question = (props) => {
     const {question, options} = props
+    const [optionClicked, setOptionClicked] = React.useState('')
+
+    const onOptionSelect = (e) => {
+        setOptionClicked(e.target.textContent);
+    }
 
     return (
         <div className="question-container">
-            <p className="question">{decodeURI(encodeURI(question))}</p>
+            <p className="question">{decodeURI(question.replaceAll("&quot;", '"').replaceAll("&#039;", "'"))}</p>
             <div className="options-container">
-                <button className="option">{options[0]}</button>
-                <button className="option">{options[1]}</button>
-                <button className="option">{options[2]}</button>
-                <button className="option">{options[3]}</button>
+                {options.map((item) => <button onClick = {onOptionSelect} key = {uuid()} className="option" style={{backgroundColor: optionClicked === item ? "#D6DBF5" : "#F5F7FB", border: optionClicked === item ?  "none":"1px solid #293264"}} >{item}</button>)}
             </div>
         </div>
     )
