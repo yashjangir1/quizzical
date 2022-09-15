@@ -42,7 +42,7 @@ const Button = (props) => {
     }
 
     return (
-        <button onClick = {onOptionSelect} className="option" style={stylingOptions()} >{option}</button>
+        <button onClick = {onOptionSelect} className="option" style={stylingOptions()} >{decodeURI(option).replaceAll("&quot;", '"').replaceAll("&#039;", "'")}</button>
     )
 }
 

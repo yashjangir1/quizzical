@@ -4,9 +4,14 @@ import Button from "../Button";
 import { v4 as uuid } from "uuid";
 
 const Question = (props) => {
-    const {question, options, checkAnswers} = props
+    const {question, options, checkAnswers, updateScore, answer} = props
     const [optionClicked, setOptionClicked] = React.useState('')
-    const answer = options[3];
+   
+    React.useEffect(() => {
+        if(optionClicked === answer && checkAnswers){
+            updateScore();
+        }
+    }, [checkAnswers]);
 
     const onOptionSelect = (e) => {
         setOptionClicked(e.target.textContent);

@@ -19,7 +19,7 @@ const Quiz = () => {
                 <button className='start-quiz-button' onClick = {generateQuestions} >Start quiz</button>
             </div>)
             :
-            (<QuizQuestions quizArr = {questionsArr} />)
+            (<QuizQuestions quizArr = {questionsArr} generateQuestions = {generateQuestions} />)
     )
 }
 
