@@ -12,6 +12,10 @@ const QuizQuestions = (props) => {
         setScore(prevScore => prevScore + 1);
     }
 
+    const setScoreZero = () => {
+        setScore(0);
+    }
+
     const checkingAnswers = () => {
         setCheckAnswers(true);
     }
@@ -23,6 +27,7 @@ const QuizQuestions = (props) => {
                 const data = await response.json()
                 setQuizArray(data.results.map((item, index) => ({...item, id: index, options: [...item.incorrect_answers, item.correct_answer].sort(() => Math.random() - 0.5)})))
                 setCheckAnswers(false)
+                setScoreZero();
             }
             catch(error){
                 console.log(error);
