@@ -1,0 +1,10 @@
+.option{
+    font-family: Inter;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #293264;
+    font-weight: 600;
+}
